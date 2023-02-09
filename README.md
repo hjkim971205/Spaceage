@@ -1,29 +1,36 @@
-# (Application Name)
+# SpaceAges
 
-#### (Brief Description of Application)
+#### This application calculates the person's age on multiple planets 
 
-#### By (Your Name Here)
+#### By Hyung Jin Kim
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _JavaScript_
+* _CSS_
+* _Bootstrap_
+* _Babel_
+* _Jest_
+* _Node_
+* _Webpack_
+* _ESLint_
 
 ## Description
 
+_This application will utilize jest and ESLint to test the user's ability to test using TDD._
+
 ## Setup/Installation Requirements
 
-* _Installing all packages with $ npm install._
-* _Building the project using webpack with $ npm run build_
-* _Starting a development server with $ npm run start_
-* _Linting JS files in the src folder with $ npm run lint_
-* _Running tests with Jest using $ npm run test_
+* _Clone this repository to your Desktop_
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _There is no UI for the user_
 
 ## License
+
+MIT - Contact me at hyungjinkim1205@gmail.com.
+
+Copyright (c) _2023_ _Hyung Jin Kim_
