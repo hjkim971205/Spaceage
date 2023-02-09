@@ -1,9 +1,10 @@
-export default function AgeCalculator(age) {
-    this.age = age;
+export default class AgeCalculator {
+  constructor(earthAge) {
+    this.earthAge = earthAge;
   }
   
-  AgeCalculator.prototype.mercury = (earthAge) => {
-    let mercuryYear = 0;
-    mercuryYear = earthAge / 0.24;
+  mercuryTime() {
+    let mercury = this.earthAge/0.24;
+    this.mercuryAge = parseFloat(mercury).toFixed(2);
   }
-  
+}
