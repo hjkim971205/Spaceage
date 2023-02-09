@@ -70,4 +70,22 @@ describe('AgeCalculator', () => {
     earthAge.mercuryTime();
     expect(earthAge.mercuryFutureAge).toEqual("20.83");
   })
+
+  test('should take in earth age to start with and calculate the years in the future if the person calculated time passed on venus', () => {
+    const earthAge = new AgeCalculator(56, 43, 61);
+    earthAge.venusTime();
+    expect(earthAge.venusFutureAge).toEqual("8.06");
+  })
+
+  test('should take in earth age to start with and calculate the years in the future if the person calculated time passed on mars', () => {
+    const earthAge = new AgeCalculator(56, 43,  61);
+    earthAge.marsTime();
+    expect(earthAge.marsFutureAge).toEqual("2.66");
+  })
+
+  test('should take in earth age to start with and calculate the years in the future if the person calculated time passed on jupiter', () => {
+    const earthAge = new AgeCalculator(56, 43, 61);
+    earthAge.jupiterTime();
+    expect(earthAge.jupiterFutureAge).toEqual("0.42");
+  })
 })
