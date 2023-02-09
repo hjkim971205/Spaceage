@@ -59,4 +59,15 @@ describe('AgeCalculator', () => {
     earthAge.jupiterTime();
     expect(earthAge.jupiterSinceAge).toEqual("1.10");
   })
+
+  test('should take in earth age to start with and calculate the years since', () => {
+    const earthAge = new AgeCalculator(56, 43, 61);
+    expect(earthAge.futureAge).toEqual(5);
+  })
+
+  test('should take in earth age to start with and calculate the years in the future if the person calculated time passed on mercury', () => {
+    const earthAge = new AgeCalculator(56, 43, 61);
+    earthAge.mercuryTime();
+    expect(earthAge.mercuryFutureAge).toEqual("20.83");
+  })
 })
