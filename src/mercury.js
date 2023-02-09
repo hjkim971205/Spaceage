@@ -1,11 +1,15 @@
 export default class AgeCalculator {
-  constructor(earthAge) {
+  constructor(earthAge, sinceAge) {
     this.earthAge = earthAge;
+    this.sinceAge = earthAge - sinceAge;
   }
   
   mercuryTime() {
     let mercury = this.earthAge/0.24;
     this.mercuryAge = parseFloat(mercury).toFixed(2);
+
+    let mercurySince = this.sinceAge/.24;
+    this.mercurySinceAge = parseFloat(mercurySince).toFixed(2);
   }
 
   venusTime() {
