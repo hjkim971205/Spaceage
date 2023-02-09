@@ -12,4 +12,14 @@ export default class AgeCalculator {
     let venus = this.earthAge/.62;
     this.venusAge = parseFloat(venus).toFixed(2);
   }
+
+  marsTime() {
+    let mars = this.earthAge/1.88;
+    this.marsAge = parseFloat(mars).toFixed(2);
+  }
+
+  jupiterTime() {
+    let jupiter = this.earthAge/11.86;
+    this.jupiterAge = parseFloat(jupiter).toFixed(2);
+  }
 }
