@@ -15,15 +15,24 @@ export default class AgeCalculator {
   venusTime() {
     let venus = this.earthAge/.62;
     this.venusAge = parseFloat(venus).toFixed(2);
+
+    let venusSince = this.sinceAge/.62;
+    this.venusSinceAge = parseFloat(venusSince).toFixed(2);
   }
 
   marsTime() {
     let mars = this.earthAge/1.88;
     this.marsAge = parseFloat(mars).toFixed(2);
+
+    let marsSince = this.sinceAge/1.88;
+    this.marsSinceAge = parseFloat(marsSince).toFixed(2);
   }
 
   jupiterTime() {
     let jupiter = this.earthAge/11.86;
     this.jupiterAge = parseFloat(jupiter).toFixed(2);
+
+    let jupiterSince = this.sinceAge/11.84;
+    this.jupiterSinceAge = parseFloat(jupiterSince).toFixed(2);
   }
 }
