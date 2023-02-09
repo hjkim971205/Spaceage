@@ -30,4 +30,15 @@ describe('AgeCalculator', () => {
     earthAge.jupiterTime();
     expect(earthAge.jupiterAge).toEqual("100.00");
   })
+
+  test('should take in earth age to start with and calculate the years since', () => {
+    const earthAge = new AgeCalculator(56, 43);
+    expect(earthAge.sinceAge).toEqual(13);
+  })
+
+  test('should take in earth age to start with and calculate the years since if the person calculated time passed on mars', () => {
+    const earthAge = new AgeCalculator(56, 43);
+    earthAge.mercuryTime();
+    expect(earthAge.mercurySinceAge).toEqual("54.17");
+  })
 })
