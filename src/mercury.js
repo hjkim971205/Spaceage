@@ -11,6 +11,9 @@ export default class AgeCalculator {
 
     let mercurySince = this.sinceAge/.24;
     this.mercurySinceAge = parseFloat(mercurySince).toFixed(2);
+
+    let mercuryFuture = this.futureAge/.24;
+    this.mercuryFutureAge = parseFloat(mercuryFuture).toFixed(2);
   }
 
   venusTime() {
