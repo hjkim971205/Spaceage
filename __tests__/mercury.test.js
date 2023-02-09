@@ -36,9 +36,27 @@ describe('AgeCalculator', () => {
     expect(earthAge.sinceAge).toEqual(13);
   })
 
-  test('should take in earth age to start with and calculate the years since if the person calculated time passed on mars', () => {
+  test('should take in earth age to start with and calculate the years since if the person calculated time passed on mercury', () => {
     const earthAge = new AgeCalculator(56, 43);
     earthAge.mercuryTime();
     expect(earthAge.mercurySinceAge).toEqual("54.17");
+  })
+
+  test('should take in earth age to start with and calculate the years since if the person calculated time passed on venus', () => {
+    const earthAge = new AgeCalculator(56, 43);
+    earthAge.venusTime();
+    expect(earthAge.venusSinceAge).toEqual("20.97");
+  })
+
+  test('should take in earth age to start with and calculate the years since if the person calculated time passed on mars', () => {
+    const earthAge = new AgeCalculator(56, 43);
+    earthAge.marsTime();
+    expect(earthAge.marsSinceAge).toEqual("6.91");
+  })
+
+  test('should take in earth age to start with and calculate the years since if the person calculated time passed on jupiter', () => {
+    const earthAge = new AgeCalculator(56, 43);
+    earthAge.jupiterTime();
+    expect(earthAge.jupiterSinceAge).toEqual("1.10");
   })
 })
