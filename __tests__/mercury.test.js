@@ -18,4 +18,16 @@ describe('AgeCalculator', () => {
     earthAge.venusTime();
     expect(earthAge.venusAge).toEqual("100.00");
   })
+
+  test('should take in the earth age and convert it to mars age using the conversion', () => {
+    const earthAge = new AgeCalculator(188);
+    earthAge.marsTime();
+    expect(earthAge.marsAge).toEqual("100.00");
+  })
+
+  test('should take in the earth age and convert it to jupiter age using the conversion', () => {
+    const earthAge = new AgeCalculator(1186);
+    earthAge.jupiterTime();
+    expect(earthAge.jupiterAge).toEqual("100.00");
+  })
 })
