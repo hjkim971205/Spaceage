@@ -1,7 +1,8 @@
 export default class AgeCalculator {
-  constructor(earthAge, sinceAge) {
+  constructor(earthAge, sinceAge, futureAge) {
     this.earthAge = earthAge;
     this.sinceAge = earthAge - sinceAge;
+    this.futureAge = futureAge - earthAge;
   }
   
   mercuryTime() {
