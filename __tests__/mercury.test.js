@@ -12,4 +12,10 @@ describe('AgeCalculator', () => {
     earthAge.mercuryTime();
     expect(earthAge.mercuryAge).toEqual("100.00");
   })
+
+  test('should take in the earth age and convert it to venus age using the conversion', () => {
+    const earthAge = new AgeCalculator(62);
+    earthAge.venusTime();
+    expect(earthAge.venusAge).toEqual("100.00");
+  })
 })
